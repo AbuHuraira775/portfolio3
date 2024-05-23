@@ -305,9 +305,6 @@ nav .navRoutes{
   color: #ffff;
   background-color: var(--clr1);
 }
-.activeNav:hover .inActiveNavs{
-  right: 10rem;
-}
 .inActiveNavs button{
   padding: .5rem 0;
   font-size: var(--rem1);
@@ -596,6 +593,7 @@ body{
 }
 .contactHeading{
   grid-area: 1/1/2/4;
+  margin-top: 2rem;
 }
 .contactForm{
   grid-area: 2/1/3/3;
@@ -637,6 +635,7 @@ body{
   border-radius: .4rem;
   padding: 1rem;
   width: 30%;
+  margin-top: 2rem;
 }
 .contactField textarea{
   height: 4rem;
@@ -918,7 +917,14 @@ body{
   .homeBtns button{
     padding: .8rem 1.5rem;
   }
+  .contactField button{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 4rem;
+    margin-top: 2rem;
+  }
 }
+
 @media(max-width:360px){
   .homeRightContent{
     margin: 0;
@@ -968,12 +974,6 @@ body{
   .tagName{
     font-size: .7rem !important;
     border: 1px solid var(--clr1);
-  }
-  .contactField button{
-    font-size: 1rem;
-    font-weight: 500;
-    padding: .5rem 4rem;
-    margin-top: 2rem;
   }
 }
 

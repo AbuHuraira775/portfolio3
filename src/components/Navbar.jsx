@@ -28,7 +28,7 @@ function Navbar({ one, two, three, four }) {
           }
           {/* <i class="fa-solid fa-circle-chevron-down" onClick={showInActiveNav}></i> */}
         </div>
-        <div className="inActiveNavs center" style={show? {transform: 'translateX(0)',...navStyle}:{transform: "translateX(20rem)",...navStyle}}>
+        <div className="inActiveNavs center" style={show? {transform: 'translateX(0)',...navStyle}:{transform: "translateY(-20rem)",...navStyle}}>
           <Link to={`/${two}`}>{two==""?"HOME":"ABOUT"}</Link> 
           <Link to={`/${three}`}>{three.toUpperCase()}</Link>
           <Link to={`/${four}`}>{four.toUpperCase()}</Link>
