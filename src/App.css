@@ -923,6 +923,14 @@ body{
     padding: .5rem 4rem;
     margin-top: 2rem;
   }
+  .homeBtns{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .homeBtns button{
+    width: 100%;
+  }
 }
 
 @media(max-width:360px){
@@ -1006,14 +1014,6 @@ body{
       /* font-size: 1.5rem; */
       font-weight: 500;
       margin-top: 1rem 0;
-    }
-    .homeBtns{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    .homeBtns button{
-      width: 100%;
     }
     .singleEducationComponent .aboutDetailLeft{
       width: 100%;
