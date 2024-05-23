@@ -748,6 +748,9 @@ body{
     grid-template-columns: 1fr;
     height: max-content;
   }
+  .homeRightContent{
+    padding: 0;
+  }
   .home img{
     width: 40%;
     margin: 2rem 0;
