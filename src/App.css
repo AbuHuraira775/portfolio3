@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+*{
+  font-family: "Figtree", sans-serif;
+  /* font-family: "Hind Siliguri", sans-serif; */
+  /* font-family: "Hind Siliguri", sans-serif; */
+
+}.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----------------------------------variables */
+:root{
+  --rem1 : 1rem;
+  --rem1-1 : 1.1rem;
+  --rem1-2 : 1.2rem;
+  --rem1-3 : 1.3rem;
+  --rem1-4 : 1.4rem;
+  --rem1-5 : 1.5rem;
+  --rem1-6 : 1.6rem;
+  --rem1-7 : 1.7rem;
+  --rem1-8 : 1.8rem;
+  --rem1-9 : 1.9rem;
+  --rem2 : 2rem;
+  --rem2-1 : 2.1rem;
+  --rem2-2 : 2.2rem;
+  --rem2-3 : 2.3rem;
+  --rem2-4 : 2.4rem;
+  --rem2-5 : 2.5rem;
+  --clr1: #235952;
+  --clr2: #99BC85;
+  --clr3: #BFD8AF;
+  --clr4: #D4E7C5;
+  --clr5: #DEEDD7;
+  --white1: #F9F6EE;
+  --white2: #FFFDD0;
+}
+/* --------------------------------------common */
+.mt1{
+  margin-top: 1rem;
+}
+.mt2{
+  margin-top: 2rem;
+}
+.mt3{
+  margin-top: 3rem;
+}
+.mb1{
+  margin-bottom: 1rem;
+}
+.mb2{
+  margin-bottom: 2rem;
+}
+.mb3{
+  margin-bottom: 3rem;
+}
+.ml1{
+  margin-left: 1rem;
+}
+.ml2{
+  margin-left: 2rem;
+}
+.ml3{
+  margin-left: 3rem;
+}
+.mr1{
+  margin-right: 1rem;
+}
+.mr2{
+  margin-right: 2rem;
+}
+.mr3{
+  margin-right: 3rem;
+}
+.container{
+  padding: 1rem 2rem;
+}
+.text-center{
+  text-align: center;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100vh;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+img,video{
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.hidden{
+  overflow: hidden;
+}
+/* ------------------------------colors */
+.aboutHead h1{
+  color: var(--clr1);
+  border-bottom: 1rem solid var(--clr4);
+  line-height: 2rem;
+}
+.aboutDesccription p{
+  color: var(--clr1);
+}
+.abouotEducation h1{
+  color: var(--clr1);
+}
+.line{
+  border: 1px solid var(--clr2);
+}
+.aboutComHeading{
+  color: var(--clr5);
+}
+.aboutDetailLeft h3{
+  color: var(--clr1);
+}
+.aboutDetailRight .eduHeading{
+  color: var(--clr1);
+  /* border-bottom: .5rem solid var(--clr5); */
+  /* width: max-content; */
+  border: 1px solid var(--clr2);
+  padding: .2rem;
+  border-radius: .4rem;
+}
+.instituteName{
+  font-weight: 600;
+  color: var(--clr2);
+}
+.aboutDetailRight .description{
+  color: var(--clr1);
+}
+.tagName{
+  background-color: transparent;
+  color: var(--clr1);
+  border: 1px solid var(--clr2);
+  font-weight: 600;
+}
+
+
+.workHeading h1{
+  color: var(--clr1);
+  border-bottom: 1rem solid var(--clr5);
+  width: max-content;
+}
+.workHeading p{
+  color: var(--clr2);
+}
+.projectNumber,.projectTitle{
+  color: var(--clr2);
+}
+.projectHeading{
+  color: var(--clr1);
+}
+.projectNumber{
+  border-bottom: 1rem solid var(--clr5);
+}
+.projectDescription{
+  color: var(--clr1);
+}
+.project button,.contactField button{
+  border: 1px solid var(--clr1);
+  color: var(--clr1);
+  background-color: transparent;
+  transition: .3s all ease;
+  /* border: 1px solid var(--clr1); */
+}
+.project button:hover,.contactField button:hover{
+  border: 1px solid var(--clr1);
+  color: #ffff;
+  background-color: var(--clr1);
+}
+
+.contactHeading h1,.imageHeading h1{
+  color: var(--clr1);
+  border-bottom: 1rem solid var(--clr5);
+  width: max-content;
+}
+.contactField label{
+  color: var(--clr1);
+}
+.contactField input,textarea{
+  border: 1px solid var(--clr1);
+}
+.contactField input:focus,textarea:focus{
+  border: 1px solid var(--clr2);
+}
+.contactAbout p{
+  color: var(--clr1);
+}
+/* ------------------------------nav */
+nav{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 2rem;
+  background-color: var(--clr4);
+  padding: 1.5rem 0;
+  position: relative;
+}
+nav img{
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+nav .navRoutes{
+  display: block;
+  margin-right: 1rem;
+}
+.activeNav{
+  padding: var(--rem1);
+  border: 1px solid var(--clr1);
+  border-radius: .4rem;
+}
+.activeNav i{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--clr1);
+}
+.activeNav input{
+  border: none;
+  outline: none;
+  font-size: var(--rem1);
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--clr1);
+}
+.inActiveNavs{
+  position: absolute;
+  background-color: var(--clr4);
+  height: max-content;
+  width: 12rem;
+  display: grid;
+  gap: .5rem;
+  padding:  1rem 2rem;
+  /* border: 1px solid var(--clr1); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.inActiveNavs a{
+  color: var(--clr1);
+  width: 10rem;
+  background-color: transparent;
+  border-radius: .4rem;
+  padding: .5rem 0;
+  margin: auto;
+  transition: .3s all ease;
+  border: 1px solid var(--clr1);
+}
+.inActiveNavs a:hover{
+  color: #ffff;
+  background-color: var(--clr1);
+}
+.activeNav:hover .inActiveNavs{
+  right: 10rem;
+}
+.inActiveNavs button{
+  padding: .5rem 0;
+  font-size: var(--rem1);
+  cursor: pointer;
+  background-color: var(--clr1);
+  color: #ffff;
+  border: 1px solid var(--clr1);
+  outline: none;
+  border-radius:.4rem;
+  transition: .3s all ease;
+}
+.inActiveNavs button:hover{
+  /* color: var(--clr1); */
+  background-color: var(--clr2);
+  border-color: var(--clr2);
+}
+/* -------------------------home */
+body{
+  overflow-x: hidden;
+}
+.home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  height: 80vh;
+  overflow: hidden;
+}
+.homeImage img{
+  width: 60%;
+}
+.homeRightContent{
+  height: 100%;
+  padding-left: 2rem;
+  text-align: left;
+}
+.homeRightContent .huraira{
+  color: var(--clr1);
+  line-height: 2rem;
+  border-bottom: 1.2rem solid var(--clr5);
+  width: max-content;
+  font-size: 5rem;
+}
+.homeRightContent p{
+  color: var(--clr1);
+}
+.home .me,.home .huraira,.home h2,.workHeading h1,.projectNumber,.contactHeading h1{
+  font-weight: 800;
+  line-height: 3rem;
+}
+.workHeading p,.projectDescription{
+  font-weight: 600;
+}
+.me,.workHeading h1,.projectHeading{
+  font-size: 3rem;
+}
+.huraira{
+  font-size: 4rem;
+}
+.home .h2{
+  font-size: 2rem;
+}
+.home p,.workHeading p,
+.projectDescription,
+.aboutDesccription,
+.contactField label,
+.contactField input,
+.contactDescription p{
+  font-size: 1.2rem;
+  width: 100%;
+}
+.home button{
+  /* padding: 1rem 3rem; */
+  background-color: transparent;
+  color: var(--clr1);
+}
+.homeBtns button{
+  padding: 1rem 4rem;
+  border: 1px solid var(--clr1);
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  border-radius: .2rem;
+  transition: .3s all ease;
+}
+.homeBtns .resumeBtn{
+  background-color: var(--clr1);
+  color: #ffff;
+}
+.homeBtns .resumeBtn:hover{
+  background-color: transparent;
+  color: var(--clr1);
+}
+.homeBtns .hireBtn:hover{
+  background-color: var(--clr1);
+  color: #fff;
+} 
+/* --------------------------------work */
+.workPage{
+  height: 100vh;
+}
+.projectPage{
+  height: max-content;
+  position: relative;
+}
+.projectNumber,.projectHeading,.projectDescription,.projectTitle{
+  text-align: left;
+}
+.workHeading h1,.contactHeading h1,.aboutHead h1,.aboutBottom h1{
+  font-size: 5rem;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.projectHeading{
+  width: 20%;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+.projectNumber,.aboutComHeading{
+  font-size: 5rem;
+  font-weight: 600;
+    width: max-content;
+  line-height: 2rem;
+}
+.projectTitle{
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.projectDescription,.aboutHead{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.projectDetailSide{
+  height: max-content;
+  position: sticky;
+  top: 0;
+}
+.projectDetailSide button{
+  padding: 1rem 3rem;
+  border-radius: .4rem;
+  font-size: 1.1rem;
+  cursor: pointer !important;
+  margin: 0;
+  display: flex;
+  align-self: flex-start;
+  align-self: start;
+  justify-self: start;
+}
+.projectShowImagesSide img{
+  /* height: 100vh; */
+  top: 0;
+}
+/* ----------------------------about */
+.aboutPage,.abouotEducation{
+  /* background-color: pink; */
+  height: max-content;
+}
+.aboutBottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.aboutBottom .aboutImages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 5rem;
+  align-items: center;
+}
+.aboutImages img{
+  width: 200px;
+  grid-area: auto;
+}
+.aboutHead h1{
+  font-weight: bold;
+  width: max-content;
+  margin: auto;
+  margin-top: 4rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+.aboutDesccription{
+  width: 80%;
+  margin: auto;
+  line-height: 3rem;
+  font-weight: 400;
+}
+.abouotEducation{
+  position: relative;
+  width: 70%;
+  height: max-content;
+  margin: auto;
+  /* background-color: #333; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 10fr;
+ align-items: center;
+ margin-bottom: 3rem;
+}
+.light{
+  grid-area: 1/1/2/11;
+  width: max-content;
+  margin: auto;
+  height: max-content;
+  border-radius: 2rem;
+}
+.aboutComHeading,.aboutBottom h1{
+  border: none;
+  font-weight: bolder;
+  border-bottom: 1.2rem solid var(--clr4);
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+.line{       
+  grid-area: 2/1/3/2;
+  height: 100%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: sticky;
+  top: 5rem;
+  align-self: center;
+  margin-left: 5rem;
+  background-color: red;
+
+}
+.line img{
+  position: sticky;
+  top: 85%;
+  width: 15px;
+}
+.aboutComponents{
+  grid-area: 2/2/3/11;  
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  text-align: left;
+  height: max-content;
+}
+.singleEducationComponent{
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  margin-bottom: 3rem;
+}
+.singleEducationComponent .description{
+  line-height: 2.5rem;
+}
+.aboutDetailLeft h3{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.aboutDetailRight{
+  margin-left: 2rem;
+}
+.aboutDetailRight .eduHeading{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.instituteName{
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+}
+.aboutDetailRight .description{
+  font-size: 1.2rem;
+}
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tagName{
+  width: max-content;
+  padding: .2rem .7rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+  /* font-weight: bold; */
+  margin-right: 1rem;
+}
+/* --------------------------------------contact */
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contactHeading{
+  grid-area: 1/1/2/4;
+}
+.contactForm{
+  grid-area: 2/1/3/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contactField{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 6rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+.contactField label{
+  margin-bottom: 1rem ;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contactField input,.contactField textarea{
+  height: 3rem;
+  /* padding: .4rem 1rem; */
+  border-radius: .4rem;
+  outline: none;
+  font-size: 1rem;
+}
+.contactField input[type],.contactField textarea{
+  padding-left: 1rem  !important;
+}
+.contactField button{
+  height: 3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: .4rem;
+  padding: 1rem;
+  width: 30%;
+}
+.contactField textarea{
+  height: 4rem;
+  padding-top: 1rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+.contactAbout{
+  grid-area: 2/3/3/4;
+}
+.contactAbout{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.contactDescription p{
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.contactLinks{
+  justify-content: start;
+}
+.contactLinks a{
+  width: max-content;
+}
+.contactLinks i{
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+
+
+
+@media(max-width: 1029px){
+
+  /* ----------------------------------common */
+  .p{
+    line-height: 2rem;
+  }
+  .btn{
+    font-size: .5rem;
+  }
+  .aboutHead h1,.aboutBottom h1,.abouotEducation h1,.contactHeading h1{
+    font-size: 3rem;
+    line-height: 1.2rem;
+  }
+
+
+
+
+
+  .home{
+    height: 100vh;
+  }
+  .home img{
+    width: 80%;
+    margin-top: -5rem;
+  }
+  .homeBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .homeBtns button{
+    padding: 1rem 3rem;
+  }
+  .aboutHead h1,.aboutBottom h1{
+    margin-bottom: 2rem;
+  }
+  .aboutBottom img{
+    width: 8rem;
+  }
+  .aboutComponents{
+    width: 90%;
+  }
+  .singleEducationComponent .eduHeading,.singleEducationComponent h3,.singleEducationComponent .description{
+    font-size: 1.1rem;
+  }
+  .tagName{
+    padding: 0rem 1rem;
+    border-radius: 5rem;
+  }
+  .workHeading h1{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  .projectNumber{
+    line-height: 2.2rem;
+  }
+  .projectHeading{
+    font-size: 3.5rem;
+    width: 50%;
+  }
+  .projectTitle{
+    font-size: 2.5rem;
+  }
+  .contactHeading h1{
+    margin-top: 3rem;
+  }
+
+}
+
+
+@media(max-width: 768px){
+  /* ---------------------------common */
+  .home{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: max-content;
+  }
+  .home img{
+    width: 40%;
+    margin: 2rem 0;
+  }
+  .homeBtns{
+    justify-content: start;
+    margin-bottom: 3rem;
+  }
+  .abouotEducation{
+    width: 90%;
+  }
+  .projectNumber{
+    font-size: 4rem;
+    line-height: 1.2rem;
+  }
+  .projectHeading{
+    width: 70%;
+    font-size: 2.7rem;
+  }
+  .projectTitle{
+    font-size: 2rem;
+  }
+}
+@media(max-width:700px){
+  .contact{
+    display: grid;
+    grid-area: auto;
+  }
+  .contactForm{
+    grid-area: 2/1/3/6;
+  }
+  .contactField{
+    width: 90%;
+  }
+  .contactAbout{
+    grid-area: 3/1/4/3;
+  }
+}
+
+
+@media(max-width: 576px){
+    .aboutComponents,.line{
+      margin-left: -1rem;
+    }
+    .singleEducationComponent .eduHeading,.singleEducationComponent h2,.singleEducationComponent .description,.singleEducationComponent h3{
+      font-size: 1rem;
+    }
+    .singleEducationComponent .eduHeading{
+
+      border-radius: .2rem;
+      padding: .3rem ;
+    }
+    .tagName{
+      font-size: .8rem;
+      padding: .1rem 1rem;
+    }
+    .workHeading h1{
+      font-size: 3rem;
+      line-height: 1.2rem;
+    }
+    .workHeading p{
+      font-size: 1rem;
+      font-weight: 400;
+      width: 90%;
+      margin: auto;
+    }
+    .project{
+      height: max-content;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .projectDetailSide{
+      background-color: #fff;
+      position: relative;
+      height: 100vh;
+    }
+}
+
+
+
+
+@media(max-width: 500px){
+  .home .huraira{
+    font-size: 4rem;
+    line-height: 1.6rem;
+  }
+  .home img{
+    width: 70%;
+  }
+  .homeBtns{
+    width: 100%;
+  }
+  .homeBtns button{
+    padding: 1rem 2rem;
+  }
+  .aboutHead h1,.aboutBottom h1,.abouotEducation h1{
+    font-size: 2.5rem;
+  }
+  .aboutBottom img{
+    width: 80px;
+  }
+  .about p{
+    font-size: 1rem;
+  }
+  .singleEducationComponent .eduHeading,
+  .singleEducationComponent h3,
+  .singleEducationComponent h2,
+  .singleEducationComponent p{
+    font-size: .9rem;
+  }
+  .tagName{
+    font-size: .8rem !important;
+    line-height: .8rem;
+    padding: .3rem .5rem ;
+  }
+  .abouotEducation h1{
+    margin-bottom: 3rem;
+  }
+  .aboutDetailRight{
+    width: 120%;
+  }
+  .aboutDetailLeft{
+    width: 120%;
+  }
+  .contactAbout p{
+    font-size: 1rem;
+    /* text-align: justify; */
+    width: 140%;
+  }
+  .contactLinks{
+    margin-bottom: 3rem;
+  }
+}
+
+@media(max-width: 480px){
+    .me{
+      font-size: 2.5rem;
+    }
+    .huraira{
+      font-size: 3rem !important;
+    }
+    .workHeading h1{
+      font-size: 2.6rem;
+    }
+    .projectDescription {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+}
+
+
+@media(max-width: 430px){
+  .workHeading h1{
+    width: 70%;
+    text-align: center;
+    line-height: 3rem;
+    border: none;
+    margin-top: -9rem;
+  }
+  .projectTitle,.projectDescription{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .projectHeading{
+    width: 90%;
+  }
+  .homeBtns button{
+    padding: .8rem 1.5rem;
+  }
+}
+@media(max-width:360px){
+  .homeRightContent{
+    margin: 0;
+    padding: 0;
+  }
+  .homeBtns button{
+    padding: .5rem .9rem;
+  }
+  .activeNav{
+    width: 120px;
+  }
+  .activeNav i{
+    margin-left: -5rem;
+  }
+  .inActiveNavs{
+    right: 1rem;
+    border: none;
+  }
+  .aboutHead h1,.aboutBottom h1,.abouotEducation h1{
+    font-size: 1.5rem;
+    /* width: 70%; */
+    margin: auto;
+    border-bottom: .5rem solid var(--clr5);
+    line-height: .5rem;
+  }
+  .aboutHead h1{
+    margin-top: 3rem;
+  }
+  .abouotEducation h1{
+    margin-bottom: 3rem;
+  }
+  .aboutImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .aboutDetailRight{
+    width: 80%;
+  }
+  .singleEducationComponent .eduHeading {
+    border: none;
+    font-weight: bolder;
+    /* font-size: 2rem; */
+  }
+  .singleEducationComponent .description{
+    text-align: justify;
+  }
+  .tagName{
+    font-size: .7rem !important;
+    border: 1px solid var(--clr1);
+  }
+  .contactField button{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 4rem;
+    margin-top: 2rem;
+  }
+}
+
+
+@media(max-width: 320px){
+  .activeNav{
+    padding: .4rem;
+    display: flex;
+    align-items: center;justify-content: center;
+  }
+  .activeNav input{
+    font-size: .9rem !important;
+    font-weight: 600;
+    margin-right: 1rem;
+  }
+  .activeNav i{
+    font-size: 1rem;
+  }
+    .navLogo img{
+      width: 50px;
+      height: 50px;
+    }
+    .me{
+      font-size: 2rem;
+    }
+    .huraira{
+      font-size: 2.5rem !important;
+    }
+    .homeTitle {
+      /* font-size: 1.5rem; */
+      font-weight: 500;
+      margin-top: 1rem 0;
+    }
+    .homeBtns{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .homeBtns button{
+      width: 100%;
+    }
+    .singleEducationComponent .aboutDetailLeft{
+      width: 100%;
+    }
+    .aboutDetailRight{
+      margin-left: .5rem;
+      width: 100%;
+    }
+    .description{
+      font-size: 2rem;
+      line-height: .3rem !important;
+    }
+    .contactHeading h1{
+      font-size: 2rem;
+      line-height: 1rem;
+    }
+}
