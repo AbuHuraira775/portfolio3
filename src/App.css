@@ -1039,3 +1039,63 @@ body{
       line-height: 1rem;
     }
 }
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+}
+
+.app-container a {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #4f46e5;
+  background-color: #4f46e5;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.app-container a::before,
+.app-container a::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border: 2px solid #a5b4fc;
+  transition: transform 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.app-container a::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.app-container a::after {
+  width: 110%;
+  height: 110%;
+  border-radius: 10px;
+}
+
+.app-container a:hover {
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.5);
+}
+
+.app-container a:hover::before,
+.app-container a:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}

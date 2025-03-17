@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import AllRoutes from './config/AllRoutes';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <AllRoutes />
+    <div className="app-container">
+      <a href="/portfolio" className="portfolio-button">
+        🚀 Explore My New Portfolio!
+      </a>
     </div>
   );
 }
