@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="app-container">
       <a href="https://antd-portfolio.vercel.app/" className="portfolio-button">
-        🚀 Explore My New Portfolio!
+        Click to Open 
       </a>
     </div>
   );
